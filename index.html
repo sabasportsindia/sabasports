@@ -1,124 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SABA SPORTS - Official Website</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #001f3f;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    nav {
-      background: #0074D9;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    section {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #001f3f;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-    .product-images {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .product-images img {
-      width: 250px;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.15);
-    }
-  </style>
+  <title>SABA SPORTS | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Welcome to SABA SPORTS</h1>
-    <p>High-Quality Sports Goods Manufacturer & Trader</p>
-  </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 flex justify-between items-center shadow-lg">
+    <div class="text-2xl font-bold text-orange-400">SABA SPORTS</div>
+    <ul class="flex gap-6">
+      <li><a href="#home" class="hover:text-orange-400">Home</a></li>
+      <li><a href="#about" class="hover:text-orange-400">About</a></li>
+      <li><a href="#products" class="hover:text-orange-400">Products</a></li>
+      <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+    </ul>
   </nav>
 
-  <main>
-    <section id="home">
-      <h2>What We Do</h2>
-      <p>We manufacture premium Carrom Boards and Cricket Bats (Tennis & Leather, Kashmiri Willow).</p>
-      <p>We also trade in all kinds of sports items including:</p>
-      <ul>
-        <li>Stumps, Gloves, Pads, Balls</li>
-        <li>Badminton, Chess, Football</li>
-        <li>Sports Dress, Full Sports Kits</li>
-      </ul>
-      <div class="product-images">
-        <img src="https://images.pexels.com/photos/6131480/pexels-photo-6131480.jpeg" alt="Carrom Board">
-        <img src="https://images.pexels.com/photos/162509/cricket-sport-game-ball-162509.jpeg" alt="Cricket Bat">
-        <img src="https://images.pexels.com/photos/163209/soccer-ball-sport-football-163209.jpeg" alt="Football">
+  <!-- Hero Section -->
+  <section id="home" class="p-8 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1571019613914-85f342c55f9d?auto=format&fit=crop&w=1400&q=80');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl">
+      <h1 class="text-4xl font-bold text-orange-400 mb-4">Premium Sports Equipment Since 2009</h1>
+      <p class="text-lg max-w-2xl">From carrom boards to cricket bats, we manufacture and supply quality sports goods with trust and tradition.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-10 bg-gray-800">
+    <h2 class="text-3xl font-semibold text-orange-400 mb-4">About Us</h2>
+    <p class="text-lg leading-relaxed max-w-4xl">
+      SABA SPORTS is a trusted name in Indian sports goods manufacturing. With 15+ years of experience, we specialize in carrom board production, cricket bats (tennis & leather ball, Kashmiri willow), and trading of all types of sports items including gloves, pads, footballs, badminton sets, chess boards, sportswear and full kits. Located in Meerut, our business is known for quality, durability and value.
+    </p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="p-10">
+    <h2 class="text-3xl font-semibold text-orange-400 mb-6">Our Products</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-800 rounded-xl p-4 shadow-lg">
+        <img src="https://images.unsplash.com/photo-1584270354949-bd8a264723db?auto=format&fit=crop&w=400&q=80" class="rounded mb-4" />
+        <h3 class="text-xl font-bold">Carrom Boards</h3>
+        <p>High-quality tournament and home-use boards.</p>
       </div>
-    </section>
+      <div class="bg-gray-800 rounded-xl p-4 shadow-lg">
+        <img src="https://images.unsplash.com/photo-1579982781151-0e90f5f12b6a?auto=format&fit=crop&w=400&q=80" class="rounded mb-4" />
+        <h3 class="text-xl font-bold">Cricket Bats</h3>
+        <p>Kashmiri willow bats for tennis and leather ball cricket.</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-4 shadow-lg">
+        <img src="https://images.unsplash.com/photo-1603481546579-621c3b73eb30?auto=format&fit=crop&w=400&q=80" class="rounded mb-4" />
+        <h3 class="text-xl font-bold">Full Sports Kits</h3>
+        <p>All gear in one kit: gloves, pads, shoes, stumps and more.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="products">
-      <h2>Our Product Range</h2>
-      <p>Explore our complete sports collection including Carrom Boards, Cricket Bats, Tennis Balls, Gloves, Footballs, Sports Uniforms, and full kits for school, college, and club level.</p>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="p-10 bg-gray-800">
+    <h2 class="text-3xl font-semibold text-orange-400 mb-4">Contact Us</h2>
+    <p>Email: <a href="mailto:sabasportsindia@gmail.com" class="text-blue-400">sabasportsindia@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919759412998" class="text-blue-400">+91 9759412998</a></p>
+    <p>GST: 09GWSPS6918D1ZP</p>
+    <a href="https://wa.me/919759412998" target="_blank" class="inline-block mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Chat on WhatsApp</a>
+  </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>SABA SPORTS is a trusted name in the Indian sports goods industry for the last 15 years. Based in Meerut, U.P., we are known for our quality craftsmanship, timely delivery, and customer satisfaction. Our factory and team work tirelessly to deliver excellence in every product we offer.</p>
-      <p>From manufacturing Carrom Boards and Cricket Bats to trading a wide variety of sports items, we serve both bulk buyers and retail customers across India. Our focus is always on quality, affordability, and integrity.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Information</h2>
-      <p><strong>Address:</strong> Mazeed Nagar, Shyam Nagar Road, 250002 Meerut U.P, India</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/919759412998" target="_blank">+91 9759412998</a></p>
-      <p><strong>Email:</strong> <a href="mailto:sabasportsindia@gmail.com">sabasportsindia@gmail.com</a></p>
-      <p><strong>GST:</strong> 09GWSPS6918D1ZP</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 SABA SPORTS. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="bg-gray-900 p-4 text-center text-gray-400">
+    &copy; 2025 SABA SPORTS. All Rights Reserved.
   </footer>
 </body>
+
 </html>
