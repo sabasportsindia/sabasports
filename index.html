@@ -17,6 +17,10 @@
       padding: 20px 0;
       text-align: center;
     }
+    header img {
+      max-height: 100px;
+      margin-bottom: 10px;
+    }
     header h1 {
       margin: 0;
       font-size: 2.2rem;
@@ -44,6 +48,20 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product-gallery div {
+      text-align: center;
+    }
+    .product-gallery img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
     footer {
       background: #001f3f;
       color: white;
@@ -54,6 +72,7 @@
 </head>
 <body>
   <header>
+    <img src="https://i.imgur.com/rrdk6Ql.png" alt="SABA SPORTS Logo">
     <h1>Welcome to SABA SPORTS</h1>
     <p>High-Quality Sports Goods Manufacturer & Trader</p>
   </header>
@@ -75,6 +94,24 @@
         <li>Badminton, Chess, Football</li>
         <li>Sports Dress, Full Sports Kits</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Our Products</h2>
+      <div class="product-gallery">
+        <div>
+          <img src="https://i.imgur.com/bPzEZkW.jpg" alt="Carrom Board">
+          <p>Premium Carrom Board</p>
+        </div>
+        <div>
+          <img src="https://i.imgur.com/V7IBlG5.jpg" alt="Cricket Bat">
+          <p>Kashmiri Willow Cricket Bat</p>
+        </div>
+        <div>
+          <img src="https://i.imgur.com/J8lFmsM.jpg" alt="Sports Kit">
+          <p>Full Sports Kit</p>
+        </div>
+      </div>
     </section>
 
     <section>
