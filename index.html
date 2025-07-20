@@ -32,12 +32,26 @@
       padding: 20px;
       text-align: center;
     }
-    .product-images img {
-      margin: 10px;
-      width: 200px;
-      height: 140px;
+    .product {
+      display: inline-block;
+      width: 250px;
+      margin: 15px;
+      background-color: #fff;
       border-radius: 10px;
-      box-shadow: 2px 2px 6px #999;
+      box-shadow: 2px 2px 6px #ccc;
+      padding: 10px;
+    }
+    .product img {
+      width: 100%;
+      height: 160px;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      margin: 5px 0;
+      font-weight: bold;
     }
     footer {
       background-color: #005b96;
@@ -45,6 +59,23 @@
       text-align: center;
       padding: 15px;
       margin-top: 40px;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px #888;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
@@ -64,18 +95,32 @@
 
   <div class="content">
     <h2>Our Products</h2>
-    <div class="product-images">
+    <div class="product">
       <img src="https://images.pexels.com/photos/16611934/pexels-photo-16611934.jpeg" alt="Carrom Board" />
-      <img src="https://images.pexels.com/photos/6371710/pexels-photo-6371710.jpeg" alt="Cricket Bat" />
-      <img src="https://images.pexels.com/photos/4761791/pexels-photo-4761791.jpeg" alt="Full Sports Kit" />
+      <h3>Carrom Board</h3>
+      <p>Price: ₹1200</p>
     </div>
-    <p>We also deal in gloves, pads, stumps, badminton, chess, football, and complete sports dress kits.</p>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/6371710/pexels-photo-6371710.jpeg" alt="Cricket Bat" />
+      <h3>Cricket Bat</h3>
+      <p>Price: ₹1500</p>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/4761791/pexels-photo-4761791.jpeg" alt="Full Sports Kit" />
+      <h3>Full Sports Kit</h3>
+      <p>Price: ₹4999</p>
+    </div>
+    <p>We also deal in gloves, pads, stumps, badminton, chess, football, and sports dress kits.</p>
   </div>
 
   <footer>
     <p>Contact us on WhatsApp: +91 6396085566 | Email: sabaglobalconnect@gmail.com</p>
     <p>&copy; 2025 SABA SPORTS. All rights reserved.</p>
   </footer>
+
+  <a href="https://wa.me/916396085566" target="_blank">
+    <button class="whatsapp-button">💬</button>
+  </a>
 
 </body>
 </html>
