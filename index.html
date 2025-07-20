@@ -14,12 +14,8 @@
     header {
       background: #001f3f;
       color: white;
-      text-align: center;
       padding: 20px 0;
-    }
-    header img {
-      height: 80px;
-      margin-bottom: 10px;
+      text-align: center;
     }
     header h1 {
       margin: 0;
@@ -38,7 +34,7 @@
     }
     main {
       padding: 20px;
-      max-width: 1100px;
+      max-width: 900px;
       margin: auto;
     }
     section {
@@ -48,27 +44,28 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .product-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .product-gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    }
     footer {
       background: #001f3f;
       color: white;
       text-align: center;
       padding: 10px;
     }
+    .product-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product-images img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sport_India_logo.svg/1024px-Sport_India_logo.svg.png" alt="SABA SPORTS Logo">
     <h1>Welcome to SABA SPORTS</h1>
     <p>High-Quality Sports Goods Manufacturer & Trader</p>
   </header>
@@ -90,20 +87,10 @@
         <li>Badminton, Chess, Football</li>
         <li>Sports Dress, Full Sports Kits</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Our Products</h2>
-      <div class="product-gallery">
-        <div>
-          <img src="https://5.imimg.com/data5/YF/LY/MY-6514236/carrom-board-500x500.jpg" alt="Carrom Board">
-        </div>
-        <div>
-          <img src="https://5.imimg.com/data5/YF/FF/MY-6514236/kashmiri-willow-cricket-bat-500x500.jpg" alt="Cricket Bat">
-        </div>
-        <div>
-          <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/MJ/TY/TK/10729334/full-sports-kit-500x500.jpg" alt="Full Sports Kit">
-        </div>
+      <div class="product-images">
+        <img src="https://5.imimg.com/data5/YF/LY/MY-6514236/carrom-board-500x500.jpg" alt="Carrom Board">
+        <img src="https://5.imimg.com/data5/YF/FF/MY-6514236/kashmiri-willow-cricket-bat-500x500.jpg" alt="Cricket Bat">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/MJ/TY/TK/10729334/full-sports-kit-500x500.jpg" alt="Full Sports Kit">
       </div>
     </section>
 
@@ -121,3 +108,4 @@
   </footer>
 </body>
 </html>
+
