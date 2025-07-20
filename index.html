@@ -14,11 +14,11 @@
     header {
       background: #001f3f;
       color: white;
-      padding: 20px 0;
       text-align: center;
+      padding: 20px 0;
     }
     header img {
-      max-height: 100px;
+      height: 80px;
       margin-bottom: 10px;
     }
     header h1 {
@@ -38,7 +38,7 @@
     }
     main {
       padding: 20px;
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
     }
     section {
@@ -49,17 +49,13 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .product-gallery {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      justify-content: center;
-    }
-    .product-gallery div {
-      text-align: center;
     }
     .product-gallery img {
-      width: 250px;
-      border-radius: 12px;
+      width: 100%;
+      border-radius: 10px;
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
     footer {
@@ -72,7 +68,7 @@
 </head>
 <body>
   <header>
-    <img src="https://i.imgur.com/rrdk6Ql.png" alt="SABA SPORTS Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sport_India_logo.svg/1024px-Sport_India_logo.svg.png" alt="SABA SPORTS Logo">
     <h1>Welcome to SABA SPORTS</h1>
     <p>High-Quality Sports Goods Manufacturer & Trader</p>
   </header>
@@ -100,16 +96,13 @@
       <h2>Our Products</h2>
       <div class="product-gallery">
         <div>
-          <img src="https://i.imgur.com/bPzEZkW.jpg" alt="Carrom Board">
-          <p>Premium Carrom Board</p>
+          <img src="https://5.imimg.com/data5/YF/LY/MY-6514236/carrom-board-500x500.jpg" alt="Carrom Board">
         </div>
         <div>
-          <img src="https://i.imgur.com/V7IBlG5.jpg" alt="Cricket Bat">
-          <p>Kashmiri Willow Cricket Bat</p>
+          <img src="https://5.imimg.com/data5/YF/FF/MY-6514236/kashmiri-willow-cricket-bat-500x500.jpg" alt="Cricket Bat">
         </div>
         <div>
-          <img src="https://i.imgur.com/J8lFmsM.jpg" alt="Sports Kit">
-          <p>Full Sports Kit</p>
+          <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/MJ/TY/TK/10729334/full-sports-kit-500x500.jpg" alt="Full Sports Kit">
         </div>
       </div>
     </section>
