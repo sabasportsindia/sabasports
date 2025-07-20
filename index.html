@@ -2,125 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SABA SPORTS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SABA SPORTS - Official Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
     }
     header {
-      background-color: #005b96;
+      background: #001f3f;
       color: white;
+      padding: 20px 0;
       text-align: center;
-      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
     }
     nav {
-      background-color: #003f63;
-      padding: 10px;
+      background: #0074D9;
       text-align: center;
+      padding: 10px 0;
     }
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
-    .content {
+    main {
       padding: 20px;
-      text-align: center;
+      max-width: 900px;
+      margin: auto;
     }
-    .product {
-      display: inline-block;
-      width: 250px;
-      margin: 15px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 2px 2px 6px #ccc;
-      padding: 10px;
-    }
-    .product img {
-      width: 100%;
-      height: 160px;
-      border-radius: 10px;
-    }
-    .product h3 {
-      margin: 10px 0 5px;
-    }
-    .product p {
-      margin: 5px 0;
-      font-weight: bold;
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #005b96;
+      background: #001f3f;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 10px;
     }
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      font-size: 30px;
-      cursor: pointer;
-      box-shadow: 2px 2px 8px #888;
+    .product-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-    .whatsapp-button:hover {
-      background-color: #1ebe5d;
+    .product-images img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Welcome to SABA SPORTS</h1>
-    <p>Manufacturer & Trader of Sports Items</p>
+    <p>High-Quality Sports Goods Manufacturer & Trader</p>
   </header>
 
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
     <a href="#">Products</a>
+    <a href="#">About Us</a>
     <a href="#">Contact</a>
   </nav>
 
-  <div class="content">
-    <h2>Our Products</h2>
-    <div class="product">
-      <img src="https://images.pexels.com/photos/16611934/pexels-photo-16611934.jpeg" alt="Carrom Board" />
-      <h3>Carrom Board</h3>
-      <p>Price: ₹1200</p>
-    </div>
-    <div class="product">
-      <img src="https://images.pexels.com/photos/6371710/pexels-photo-6371710.jpeg" alt="Cricket Bat" />
-      <h3>Cricket Bat</h3>
-      <p>Price: ₹1500</p>
-    </div>
-    <div class="product">
-      <img src="https://images.pexels.com/photos/4761791/pexels-photo-4761791.jpeg" alt="Full Sports Kit" />
-      <h3>Full Sports Kit</h3>
-      <p>Price: ₹4999</p>
-    </div>
-    <p>We also deal in gloves, pads, stumps, badminton, chess, football, and sports dress kits.</p>
-  </div>
+  <main>
+    <section>
+      <h2>What We Do</h2>
+      <p>We manufacture premium Carrom Boards and Cricket Bats (Tennis & Leather, Kashmiri Willow).</p>
+      <p>We also trade in all kinds of sports items including:</p>
+      <ul>
+        <li>Stumps, Gloves, Pads, Balls</li>
+        <li>Badminton, Chess, Football</li>
+        <li>Sports Dress, Full Sports Kits</li>
+      </ul>
+      <div class="product-images">
+        <img src="https://images.pexels.com/photos/6131480/pexels-photo-6131480.jpeg" alt="Carrom Board">
+        <img src="https://images.pexels.com/photos/162509/cricket-sport-game-ball-162509.jpeg" alt="Cricket Bat">
+        <img src="https://images.pexels.com/photos/163209/soccer-ball-sport-football-163209.jpeg" alt="Football">
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> Majeed Nagar, Mev Gadi, Shyam Nagar Road, Meerut (UP) – 250002</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/919759412998" target="_blank">9759412998</a></p>
+      <p><strong>Email:</strong> <a href="mailto:sabasportsindia@gmail.com">sabasportsindia@gmail.com</a></p>
+      <p><strong>GST:</strong> 09GWSPS6918D1ZP</p>
+    </section>
+  </main>
 
   <footer>
-    <p>Contact us on WhatsApp: +91 6396085566 | Email: sabaglobalconnect@gmail.com</p>
     <p>&copy; 2025 SABA SPORTS. All rights reserved.</p>
   </footer>
-
-  <a href="https://wa.me/916396085566" target="_blank">
-    <button class="whatsapp-button">💬</button>
-  </a>
-
 </body>
 </html>
