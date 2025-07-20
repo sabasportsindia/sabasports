@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - SABA SPORTS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      color: #333;
+    }
+    header, footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #0074D9;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Products</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://images.pexels.com/photos/6131480/pexels-photo-6131480.jpeg" alt="Carrom Board">
+        <h3>Premium Carrom Boards</h3>
+      </div>
+      <div class="product">
+        <img src="https://images.pexels.com/photos/162509/cricket-sport-game-ball-162509.jpeg" alt="Cricket Bat">
+        <h3>Kashmiri Willow Cricket Bats</h3>
+      </div>
+      <div class="product">
+        <img src="https://images.pexels.com/photos/163209/soccer-ball-sport-football-163209.jpeg" alt="Football">
+        <h3>Football & Other Items</h3>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 SABA SPORTS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
