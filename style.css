@@ -1,4 +1,4 @@
-/* === Global Body Styling === */
+/* === GLOBAL BODY STYLING === */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -7,7 +7,7 @@ body {
   background-position: center;
 }
 
-/* === Navigation Bar === */
+/* === NAVIGATION BAR === */
 .navbar {
   background-color: #000;
   text-align: center;
@@ -26,13 +26,13 @@ body {
   text-decoration: underline;
 }
 
-/* === Section Container for About, Products, Contact === */
+/* === PAGE CONTAINER BOX === */
 .container {
   padding: 60px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* === Headings & Paragraphs === */
+/* === HEADINGS & PARAGRAPHS === */
 h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -43,7 +43,7 @@ p {
   line-height: 1.6;
 }
 
-/* === Homepage Intro Section === */
+/* === HOMEPAGE INTRO SECTION === */
 .intro h1 {
   font-size: 48px;
   margin-bottom: 10px;
@@ -54,14 +54,14 @@ p {
   line-height: 1.5;
 }
 
-/* === Home Page Right Side Image === */
+/* === HOMEPAGE IMAGE BLOCK === */
 .image-side img {
   width: 300px;
   border: 3px solid white;
   border-radius: 10px;
 }
 
-/* === Optional Info Box (index page) === */
+/* === OPTIONAL INFO BOX FOR INDEX PAGE === */
 .info {
   margin-top: 30px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -79,14 +79,14 @@ p {
   color: #0f0;
 }
 
-/* === Product Listing Page === */
+/* === PRODUCT LIST PAGE === */
 ul {
   font-size: 20px;
   list-style-type: square;
   padding-left: 40px;
 }
 
-/* === Gallery Styling === */
+/* === GALLERY SECTION === */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -109,7 +109,29 @@ ul {
   transform: scale(1.05);
 }
 
-/* === Contact Page Icon Styling === */
+/* === GALLERY FILTER BUTTONS === */
+.filters {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background-color: #222;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #0f0;
+  color: black;
+}
+
+/* === CONTACT PAGE ICONS === */
 .icon {
   width: 24px;
   height: 24px;
@@ -117,14 +139,13 @@ ul {
   margin-right: 10px;
 }
 
-/* === Responsive Layout (Basic Mobile Support) === */
+/* === RESPONSIVE MOBILE LAYOUT === */
 @media screen and (max-width: 768px) {
   body {
     font-size: 18px;
   }
 
-  .intro h1,
-  h1 {
+  h1, .intro h1 {
     font-size: 36px;
   }
 
@@ -145,5 +166,10 @@ ul {
 
   ul {
     font-size: 18px;
+  }
+
+  .filters button {
+    padding: 8px 15px;
+    font-size: 15px;
   }
 }
