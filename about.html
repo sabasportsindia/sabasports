@@ -1,30 +1,77 @@
-<h1 class="fade">About SABA SPORTS</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - SABA SPORTS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('images/football3.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
 
-<div class="fade" style="margin-bottom: 30px;">
-  <p><strong>📅 Established: 2016 • 💪 Experience: 16+ years</strong></p>
-  <p>From the heart of Meerut, SABA SPORTS has grown into a trusted name in Indian sports manufacturing. With 500+ retailers across the country and global exports underway, our products speak of precision, durability and trust.</p>
-</div>
+  <!-- 🔰 Brand Banner -->
+  <div class="brand-banner">
+    <h2>SABA SPORTS</h2>
+  </div>
 
-<hr style="margin: 30px 0; border-color: #0f0;">
+  <!-- 🧭 Navigation -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-<div class="fade" style="margin-bottom: 30px;">
-  <h2 style="color:#0f0;">🎯 Mission</h2>
-  <p>To empower every athlete — beginner or pro — with reliable, high-performance equipment that fuels passion and elevates their game.</p>
-</div>
+  <!-- 📄 Brand Story -->
+  <div class="container">
+    <h1 class="fade">About SABA SPORTS</h1>
 
-<div class="fade" style="margin-bottom: 30px;">
-  <h2 style="color:#0f0;">🌍 Vision</h2>
-  <p>To become a globally respected brand that represents India’s excellence in sports goods and delivers digital trust to retailers and players alike.</p>
-</div>
+    <div class="fade" style="margin-bottom: 30px;">
+      <p><strong>📅 Established: 2016 • 💪 Experience: 16+ years</strong></p>
+      <p>From the heart of Meerut, SABA SPORTS has grown into a trusted name in Indian sports manufacturing. With 500+ retailers across the country and global exports underway, our products speak of precision, durability and trust.</p>
+    </div>
 
-<div class="fade" style="margin-bottom: 30px;">
-  <h2 style="color:#0f0;">💡 Core Values</h2>
-  <ul style="font-size: 18px;">
-    <li>🏆 Quality First — No compromise, ever</li>
-    <li>🤝 Reliability — Commitments delivered</li>
-    <li>📈 Growth — We grow with our partners</li>
-    <li>🌐 Integrity — Rooted in India, trusted worldwide</li>
-  </ul>
-</div>
+    <hr style="margin: 30px 0; border-color: #0f0;">
 
-<p class="fade"><a href="contact.html" style="color:#0f0; text-decoration: underline;">Partner with SABA SPORTS →</a></p>
+    <div class="fade" style="margin-bottom: 30px;">
+      <h2 style="color:#0f0;">🎯 Mission</h2>
+      <p>To empower every athlete — beginner or pro — with reliable, high-performance equipment that fuels passion and elevates their game.</p>
+    </div>
+
+    <div class="fade" style="margin-bottom: 30px;">
+      <h2 style="color:#0f0;">🌍 Vision</h2>
+      <p>To become a globally respected brand that represents India’s excellence in sports goods and delivers digital trust to retailers and players alike.</p>
+    </div>
+
+    <div class="fade" style="margin-bottom: 30px;">
+      <h2 style="color:#0f0;">💡 Core Values</h2>
+      <ul style="font-size: 18px;">
+        <li>🏆 Quality First — No compromise, ever</li>
+        <li>🤝 Reliability — Commitments delivered</li>
+        <li>📈 Growth — We grow with our partners</li>
+        <li>🌐 Integrity — Rooted in India, trusted worldwide</li>
+      </ul>
+    </div>
+
+    <p class="fade"><a href="contact.html" style="color:#0f0; text-decoration: underline;">Partner with SABA SPORTS →</a></p>
+  </div>
+
+  <!-- 🧱 Footer -->
+  <div class="footer">
+    <p>&copy; 2025 SABA SPORTS • Crafted with passion in Meerut, India</p>
+  </div>
+
+  <!-- ✨ Animation Trigger -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const fadeEls = document.querySelectorAll('.fade');
+      fadeEls.forEach((el, i) => {
+        setTimeout(() => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }, 300 * i);
+      });
+    });
+  </script>
+
+</body>
+</html>
