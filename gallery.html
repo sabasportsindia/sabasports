@@ -1,148 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gallery - Saba Sports</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    .gallery-container {
-      padding: 20px;
-    }
-
-    .gallery-title {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
-      border-radius: 10px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .gallery-grid img.zoomed {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      width: 90%;
-      max-width: 600px;
-      height: auto;
-      z-index: 1000;
-      transform: translate(-50%, -50%) scale(1.2);
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      border: 5px solid white;
-    }
-
-    .overlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.6);
-      z-index: 999;
-      display: none;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Gallery - SABA SPORTS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>SABA SPORTS</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<body style="background-image: url('images/play3.jpg');">
 
-  <main class="gallery-container">
-    <h2 class="gallery-title">Product Gallery</h2>
-    <div class="gallery-grid">
-      <!-- Carrom -->
-      <img src="carrom.jpg" alt="Carrom">
-      <img src="carrom2.jpg" alt="Carrom">
-      <img src="carrom3.jpg" alt="Carrom">
-      <img src="carrom4.jpg" alt="Carrom">
-      <img src="carrom5.jpg" alt="Carrom">
-      <img src="carrom6.jpg" alt="Carrom">
-      <img src="carrom7.jpg" alt="Carrom">
-      <img src="carrom8.jpg" alt="Carrom">
-      <img src="carrom9.jpg" alt="Carrom">
-      <img src="carrom10.jpg" alt="Carrom">
-      <img src="carrom11.jpg" alt="Carrom">
-      <img src="carrpm12.jpg" alt="Carrom">
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-      <!-- Cricket -->
-      <img src="bat.jpg" alt="Bat">
-      <img src="bat3.jpg" alt="Bat">
-      <img src="ball.jpg" alt="Ball">
-      <img src="cricket1.jpg" alt="Cricket">
-      <img src="cricket2.jpg" alt="Cricket">
+  <div class="container">
+    <h1>Gallery</h1>
 
-      <!-- Football -->
-      <img src="football2.jpg" alt="Football">
-      <img src="football3.jpg" alt="Football">
-      <img src="football4.jpg" alt="Football">
+    <div class="filters">
+      <button onclick="filterGallery('all')">All</button>
+      <button onclick="filterGallery('badminton')">Badminton</button>
+      <button onclick="filterGallery('carrom')">Carrom</button>
+      <button onclick="filterGallery('chess')">Chess</button>
+      <button onclick="filterGallery('football')">Football</button>
+      <button onclick="filterGallery('cricket')">Cricket</button>
+      <button onclick="filterGallery('play')">Play</button>
+    </div>
 
+    <div class="gallery">
       <!-- Badminton -->
-      <img src="badminton.jpg" alt="Badminton">
-      <img src="badminton2.jpg" alt="Badminton">
-      <img src="badminton3.jpg" alt="Badminton">
-      <img src="badminton4.jpg" alt="Badminton">
+      <img src="images/badminton.jpg" alt="Badminton" class="badminton">
+      <img src="images/badminton2.jpg" alt="Badminton" class="badminton">
+      <img src="images/badminton3.jpg" alt="Badminton" class="badminton">
+      <img src="images/badminton4.jpg" alt="Badminton" class="badminton">
+
+      <!-- Carrom -->
+      <img src="images/carrom.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom2.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom3.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom4.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom5.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom6.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom7.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom8.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom9.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom10.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom11.jpg" alt="Carrom" class="carrom">
+      <img src="images/carrom12.jpg" alt="Carrom" class="carrom">
 
       <!-- Chess -->
-      <img src="chess.jpg" alt="Chess">
-      <img src="chess2.jpg" alt="Chess">
-      <img src="chess3.jpg" alt="Chess">
-      <img src="chess4.jpg" alt="Chess">
+      <img src="images/chess.jpg" alt="Chess" class="chess">
+      <img src="images/chess2.jpg" alt="Chess" class="chess">
+      <img src="images/chess3.jpg" alt="Chess" class="chess">
+      <img src="images/chess4.jpg" alt="Chess" class="chess">
 
-      <!-- Others -->
-      <img src="gym1.jpg" alt="Gym">
-      <img src="play.jpg" alt="Playground">
-      <img src="play2.jpg" alt="Playground">
-      <img src="play3.jpg" alt="Playground">
+      <!-- Football -->
+      <img src="images/football2.jpg" alt="Football" class="football">
+      <img src="images/football3.jpg" alt="Football" class="football">
+      <img src="images/football4.jpg" alt="Football" class="football">
+
+      <!-- Cricket -->
+      <img src="images/cricket1.jpg" alt="Cricket" class="cricket">
+      <img src="images/cricket2.jpg" alt="Cricket" class="cricket">
+      <img src="images/bat.jpg" alt="Bat" class="cricket">
+      <img src="images/bat3.jpg" alt="Bat" class="cricket">
+      <img src="images/ball.jpg" alt="Ball" class="cricket">
+
+      <!-- Play & Misc -->
+      <img src="images/play.jpg" alt="Play" class="play">
+      <img src="images/play2.jpg" alt="Play" class="play">
+      <img src="images/play3.jpg" alt="Play" class="play">
+      <img src="images/gym1.jpg" alt="Gym" class="play">
     </div>
-  </main>
-
-  <div class="overlay" id="overlay"></div>
-
-  <footer>
-    &copy; 2025 Saba Sports. All rights reserved.
-  </footer>
+  </div>
 
   <script>
-    const images = document.querySelectorAll(".gallery-grid img");
-    const overlay = document.getElementById("overlay");
-
-    images.forEach(img => {
-      img.addEventListener("click", () => {
-        if (img.classList.contains("zoomed")) {
-          img.classList.remove("zoomed");
-          overlay.style.display = "none";
+    function filterGallery(category) {
+      const images = document.querySelectorAll('.gallery img');
+      images.forEach(img => {
+        if (category === 'all' || img.classList.contains(category)) {
+          img.style.display = 'inline-block';
         } else {
-          images.forEach(i => i.classList.remove("zoomed"));
-          img.classList.add("zoomed");
-          overlay.style.display = "block";
+          img.style.display = 'none';
         }
       });
-    });
-
-    overlay.addEventListener("click", () => {
-      images.forEach(i => i.classList.remove("zoomed"));
-      overlay.style.display = "none";
-    });
+    }
   </script>
+
 </body>
 </html>
