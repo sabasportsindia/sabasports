@@ -26,6 +26,9 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
+
+  /* ✨ NEW Animation Added */
+  animation: glowPulse 2s ease-in-out infinite, slideFade 1s ease-out forwards;
 }
 
 /* === NAVBAR === */
@@ -149,10 +152,10 @@ a {
 
 /* === CONTACT ICONS === */
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 28px;                /* 🔧 Upgraded size */
+  height: 28px;
   vertical-align: middle;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 /* === FOOTER === */
@@ -175,6 +178,16 @@ a {
 .fade {
   animation: fadeIn 1s ease forwards;
   opacity: 0;
+}
+
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 5px #0f0, 0 0 10px #0f0; }
+  50%      { text-shadow: 0 0 15px #0f0, 0 0 20px #0f0; }
+}
+
+@keyframes slideFade {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 /* === RESPONSIVE DESIGN === */
@@ -219,12 +232,4 @@ a {
   .image-side img {
     width: 200px;
   }
-  @media screen and (max-width: 768px) {
-  /* Ye sab andar hona chahiye */
-  .navbar a { font-size: 18px; display: block; margin: 10px 0; }
-  .gallery img { width: 170px; height: 110px; }
-  .container { padding: 30px; }
-}
-
-
 }
