@@ -30,11 +30,13 @@
     </div>
 
     <div class="gallery">
-      <!-- Paste your full 34 image list here with proper class names -->
+      <!-- Badminton (4 images) -->
       <img src="images/badminton.jpg" class="badminton">
       <img src="images/badminton2.jpg" class="badminton">
       <img src="images/badminton3.jpg" class="badminton">
       <img src="images/badminton4.jpg" class="badminton">
+
+      <!-- Carrom (12 images) -->
       <img src="images/carrom.jpg" class="carrom">
       <img src="images/carrom2.jpg" class="carrom">
       <img src="images/carrom3.jpg" class="carrom">
@@ -47,18 +49,26 @@
       <img src="images/carrom10.jpg" class="carrom">
       <img src="images/carrom11.jpg" class="carrom">
       <img src="images/carrom12.jpg" class="carrom">
+
+      <!-- Chess (4 images) -->
       <img src="images/chess.jpg" class="chess">
       <img src="images/chess2.jpg" class="chess">
       <img src="images/chess3.jpg" class="chess">
       <img src="images/chess4.jpg" class="chess">
+
+      <!-- Football (3 images) -->
       <img src="images/football2.jpg" class="football">
       <img src="images/football3.jpg" class="football">
       <img src="images/football4.jpg" class="football">
+
+      <!-- Cricket (5 images) -->
       <img src="images/cricket1.jpg" class="cricket">
       <img src="images/cricket2.jpg" class="cricket">
       <img src="images/bat.jpg" class="cricket">
       <img src="images/bat3.jpg" class="cricket">
       <img src="images/ball.jpg" class="cricket">
+
+      <!-- Play & Misc (6 images) -->
       <img src="images/play.jpg" class="play">
       <img src="images/play2.jpg" class="play">
       <img src="images/play3.jpg" class="play">
@@ -77,16 +87,21 @@
 
     document.querySelectorAll('.gallery img').forEach(img => {
       img.addEventListener('click', function () {
+        const existing = document.querySelector('.popup');
+        if (existing) {
+          existing.remove();
+          return;
+        }
+
         const popup = document.createElement('div');
         popup.className = 'popup';
         popup.innerHTML = `
           <div class="popup-content">
             <img src="${this.src}" alt="${this.alt}">
-            <span class="close-btn">&times;</span>
           </div>
         `;
         document.body.appendChild(popup);
-        popup.querySelector('.close-btn').onclick = () => popup.remove();
+        popup.addEventListener('click', () => popup.remove());
       });
     });
   </script>
