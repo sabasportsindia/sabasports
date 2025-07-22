@@ -14,14 +14,6 @@ body {
   padding: 15px;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-
 .navbar a {
   color: white;
   margin: 15px;
@@ -34,13 +26,13 @@ body {
   text-decoration: underline;
 }
 
-/* === Main Section Container === */
+/* === Section Container for About, Products, Contact === */
 .container {
   padding: 60px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* === Headings & Text === */
+/* === Headings & Paragraphs === */
 h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -62,14 +54,14 @@ p {
   line-height: 1.5;
 }
 
-/* === Image Side on Homepage === */
+/* === Home Page Right Side Image === */
 .image-side img {
   width: 300px;
   border: 3px solid white;
   border-radius: 10px;
 }
 
-/* === Optional Info Box === */
+/* === Optional Info Box (index page) === */
 .info {
   margin-top: 30px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -87,14 +79,14 @@ p {
   color: #0f0;
 }
 
-/* === Product List === */
+/* === Product Listing Page === */
 ul {
   font-size: 20px;
   list-style-type: square;
   padding-left: 40px;
 }
 
-/* === Gallery Section === */
+/* === Gallery Styling === */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -117,10 +109,29 @@ ul {
   transform: scale(1.05);
 }
 
-/* === Responsive Layout (Optional — can extend further) === */
+/* === Contact Page Icon Styling === */
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* === Responsive Layout (Basic Mobile Support) === */
 @media screen and (max-width: 768px) {
-  .image-side img {
-    width: 200px;
+  body {
+    font-size: 18px;
+  }
+
+  .intro h1,
+  h1 {
+    font-size: 36px;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
   }
 
   .gallery img {
@@ -128,15 +139,11 @@ ul {
     height: 120px;
   }
 
-  .intro h1 {
-    font-size: 36px;
+  .image-side img {
+    width: 200px;
   }
 
-  p {
-    font-size: 18px;
-  }
-
-  .navbar a {
+  ul {
     font-size: 18px;
   }
 }
