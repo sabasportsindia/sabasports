@@ -82,7 +82,7 @@ h1 {
   cursor: zoom-in;
 }
 
-/* === Popup Image Preview === */
+/* === Popup Preview === */
 .popup {
   position: fixed;
   top: 0; left: 0;
@@ -114,7 +114,15 @@ h1 {
   cursor: pointer;
 }
 
-/* === Responsive Layout === */
+/* === Contact Icons === */
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* === Responsive Design === */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 36px;
