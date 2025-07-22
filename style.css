@@ -26,7 +26,6 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
-  animation: glowPulse 2s ease-in-out infinite, slideFade 1s ease-out forwards;
 }
 
 /* === NAVBAR === */
@@ -78,7 +77,7 @@ a {
   color: white;
 }
 
-/* === HERO IMAGE === */
+/* === IMAGE BLOCK === */
 .image-side img {
   width: 300px;
   border: 3px solid white;
@@ -167,57 +166,6 @@ a {
   border-top: 2px solid #0f0;
 }
 
-/* === PUSH SCENE ANIMATION === */
-.push-scene {
-  position: relative;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin-top: 80px;
-}
-
-.boxer {
-  position: absolute;
-  left: -150px;
-  width: 120px;
-  animation: boxerPush 2s ease-out forwards, boxerFade 1s ease-in-out 3.5s forwards;
-}
-
-.pushed-text {
-  font-size: 48px;
-  font-weight: bold;
-  color: #0f0;
-  opacity: 0;
-  animation: textSlide 2s ease-out 1.5s forwards, glowPulse 2s ease-in-out infinite;
-}
-
-/* === KEYFRAMES === */
-@keyframes glowPulse {
-  0%, 100% { text-shadow: 0 0 5px #0f0, 0 0 10px #0f0; }
-  50%      { text-shadow: 0 0 15px #0f0, 0 0 20px #0f0; }
-}
-
-@keyframes slideFade {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes boxerPush {
-  0% { left: -150px; }
-  100% { left: 100px; }
-}
-
-@keyframes textSlide {
-  from { opacity: 0; transform: translateX(-100px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes boxerFade {
-  to { opacity: 0; }
-}
-
 /* === RESPONSIVE === */
 @media screen and (max-width: 768px) {
   body {
@@ -264,13 +212,5 @@ a {
   .icon {
     width: 24px;
     height: 24px;
-  }
-
-  .pushed-text {
-    font-size: 36px;
-  }
-
-  .boxer {
-    width: 90px;
   }
 }
