@@ -16,7 +16,8 @@
   </div>
 
   <div class="container">
-    <h1>Gallery</h1>
+    <h1>SABA SPORTS – Product Gallery</h1>
+    <p style="text-align: center; font-size: 18px;">Powered by passion, precision & play.</p>
 
     <div class="filters">
       <button onclick="filterGallery('all')">All</button>
@@ -79,13 +80,25 @@
     function filterGallery(category) {
       const images = document.querySelectorAll('.gallery img');
       images.forEach(img => {
-        if (category === 'all' || img.classList.contains(category)) {
-          img.style.display = 'inline-block';
-        } else {
-          img.style.display = 'none';
-        }
+        img.style.display = category === 'all' || img.classList.contains(category)
+          ? 'inline-block' : 'none';
       });
     }
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', function () {
+        const popup = document.createElement('div');
+        popup.className = 'popup';
+        popup.innerHTML = `
+          <div class="popup-content">
+            <img src="${this.src}" alt="${this.alt}">
+            <span class="close-btn">&times;</span>
+          </div>
+        `;
+        document.body.appendChild(popup);
+        popup.querySelector('.close-btn').onclick = () => popup.remove();
+      });
+    });
   </script>
 
 </body>
