@@ -7,7 +7,7 @@ body {
   background-position: center;
 }
 
-/* === TOP BRAND BANNER === */
+/* === FIXED TOP BRAND BANNER === */
 .brand-banner {
   position: fixed;
   top: 0;
@@ -21,10 +21,11 @@ body {
 
 .brand-banner h2 {
   color: #0f0;
-  font-size: 28px;
+  font-size: 36px;
   margin: 0;
   font-weight: bold;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 /* === NAVBAR === */
@@ -32,7 +33,7 @@ body {
   background-color: #000;
   text-align: center;
   padding: 15px;
-  margin-top: 50px; /* below fixed banner */
+  margin-top: 50px;
 }
 
 .navbar a {
@@ -47,7 +48,7 @@ body {
   text-decoration: underline;
 }
 
-/* === PAGE CONTAINER === */
+/* === MAIN CONTAINER === */
 .container {
   padding: 60px;
   padding-top: 40px;
@@ -71,17 +72,12 @@ ul {
   padding-left: 40px;
 }
 
-/* === INTRO BLOCK (Homepage) === */
-.intro h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.intro p {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
+/* === HOME INTRO IMAGE === */
 .image-side img {
   width: 300px;
   border: 3px solid white;
@@ -94,7 +90,6 @@ ul {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  background-color: transparent;
 }
 
 .gallery img {
@@ -152,12 +147,34 @@ ul {
   border-radius: 10px;
 }
 
-/* === CONTACT PAGE ICONS === */
+/* === CONTACT ICONS === */
 .icon {
   width: 20px;
   height: 20px;
   vertical-align: middle;
   margin-right: 8px;
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  margin-top: 60px;
+  border-top: 2px solid #0f0;
+}
+
+/* === ANIMATION === */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
 }
 
 /* === RESPONSIVE DESIGN === */
@@ -166,8 +183,8 @@ ul {
     font-size: 18px;
   }
 
-  h1, .intro h1 {
-    font-size: 36px;
+  .brand-banner h2 {
+    font-size: 28px;
   }
 
   .navbar a {
@@ -176,21 +193,30 @@ ul {
     font-size: 18px;
   }
 
-  .gallery img {
-    width: 180px;
-    height: 120px;
+  h1 {
+    font-size: 36px;
   }
 
-  .image-side img {
-    width: 200px;
-  }
-
-  ul {
+  p, ul {
     font-size: 18px;
+  }
+
+  .container {
+    padding: 30px;
+    padding-top: 40px;
+  }
+
+  .gallery img {
+    width: 170px;
+    height: 110px;
   }
 
   .filters button {
     padding: 8px 15px;
     font-size: 15px;
+  }
+
+  .image-side img {
+    width: 200px;
   }
 }
