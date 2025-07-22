@@ -1,4 +1,4 @@
-/* 🌐 Reset & Base */
+/* 🌐 Base Styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -51,7 +51,7 @@ hr {
   font-weight: bold;
 }
 
-/* 📦 Container Wrapper */
+/* 📦 Container */
 .container {
   padding: 40px 20px;
   max-width: 1200px;
@@ -60,14 +60,7 @@ hr {
   border-radius: 10px;
 }
 
-/* 🖼️ Image Side */
-.image-side img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #0f0;
-}
-
-/* 📑 Headings */
+/* 📑 Typography */
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -81,28 +74,11 @@ p {
   line-height: 1.6;
 }
 
-/* 🔄 Fade-in Animation */
+/* ✨ Fade Animation */
 .fade {
   opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
-}
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-/* 📱 Responsive Layout */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-  .container {
-    padding: 20px;
-  }
-  h1 { font-size: 28px; }
-  h2 { font-size: 22px; }
-  p { font-size: 16px; }
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
 }
 
 /* 🧱 Footer */
@@ -114,4 +90,18 @@ p {
   color: #aaa;
   border-top: 1px solid #0f0;
   margin-top: 50px;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    padding: 20px;
+  }
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  p, li { font-size: 16px; }
 }
