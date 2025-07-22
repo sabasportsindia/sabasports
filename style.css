@@ -26,8 +26,6 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
-
-  /* ✨ NEW Animation Added */
   animation: glowPulse 2s ease-in-out infinite, slideFade 1s ease-out forwards;
 }
 
@@ -152,7 +150,7 @@ a {
 
 /* === CONTACT ICONS === */
 .icon {
-  width: 28px;                /* 🔧 Upgraded size */
+  width: 28px;
   height: 28px;
   vertical-align: middle;
   margin-right: 10px;
@@ -169,7 +167,7 @@ a {
   border-top: 2px solid #0f0;
 }
 
-/* === ANIMATION === */
+/* === ANIMATIONS === */
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -182,12 +180,47 @@ a {
 
 @keyframes glowPulse {
   0%, 100% { text-shadow: 0 0 5px #0f0, 0 0 10px #0f0; }
-  50%      { text-shadow: 0 0 15px #0f0, 0 0 20px #0f0; }
+  50% { text-shadow: 0 0 15px #0f0, 0 0 20px #0f0; }
 }
 
 @keyframes slideFade {
   0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+/* === BOXER PUSH SCENE === */
+.push-scene {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.boxer {
+  position: absolute;
+  left: -150px;
+  width: 120px;
+  animation: boxerPush 3s ease-out forwards;
+}
+
+.pushed-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0f0;
+  opacity: 0;
+  animation: textSlide 3s ease-out 1.5s forwards, glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes boxerPush {
+  to { left: 100px; }
+}
+
+@keyframes textSlide {
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 /* === RESPONSIVE DESIGN === */
@@ -231,5 +264,18 @@ a {
 
   .image-side img {
     width: 200px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .pushed-text {
+    font-size: 36px;
+  }
+
+  .boxer {
+    width: 90px;
   }
 }
