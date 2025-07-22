@@ -7,7 +7,7 @@ body {
   background-position: center;
 }
 
-/* === BRAND BANNER === */
+/* === FIXED TOP BRAND BANNER === */
 .brand-banner {
   position: fixed;
   top: 0;
@@ -21,7 +21,7 @@ body {
 
 .brand-banner h2 {
   color: #0f0;
-  font-size: 48px;
+  font-size: 70px; /* 🔼 Increased size */
   margin: 0;
   font-weight: bold;
   letter-spacing: 2px;
@@ -34,7 +34,7 @@ body {
   background-color: #000;
   text-align: center;
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 90px; /* 🔼 Spacing adjusted for banner size */
 }
 
 .navbar a {
@@ -78,14 +78,14 @@ a {
   color: white;
 }
 
-/* === HERO IMAGE BLOCK === */
+/* === IMAGE BLOCK === */
 .image-side img {
   width: 300px;
   border: 3px solid white;
   border-radius: 10px;
 }
 
-/* === GALLERY === */
+/* === GALLERY SECTION === */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -129,7 +129,7 @@ a {
   color: black;
 }
 
-/* === POPUP PREVIEW === */
+/* === IMAGE PREVIEW POPUP === */
 .popup {
   position: fixed;
   top: 0; left: 0;
@@ -167,7 +167,7 @@ a {
   border-top: 2px solid #0f0;
 }
 
-/* === ANIMATION KEYFRAMES === */
+/* === BANNER ANIMATIONS === */
 @keyframes glowPulse {
   0%, 100% {
     text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
@@ -188,14 +188,14 @@ a {
   }
 }
 
-/* === RESPONSIVE DESIGN === */
+/* === RESPONSIVE === */
 @media screen and (max-width: 768px) {
   body {
     font-size: 18px;
   }
 
   .brand-banner h2 {
-    font-size: 28px;
+    font-size: 50px; /* 🔼 Adjusted for mobile */
   }
 
   .navbar a {
