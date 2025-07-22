@@ -1,4 +1,4 @@
-/* === Global === */
+/* === GLOBAL BODY === */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -7,11 +7,32 @@ body {
   background-position: center;
 }
 
-/* === Navbar === */
+/* === TOP BRAND BANNER === */
+.brand-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.brand-banner h2 {
+  color: #0f0;
+  font-size: 28px;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* === NAVBAR === */
 .navbar {
   background-color: #000;
   text-align: center;
   padding: 15px;
+  margin-top: 50px; /* below fixed banner */
 }
 
 .navbar a {
@@ -26,19 +47,71 @@ body {
   text-decoration: underline;
 }
 
-/* === Container === */
+/* === PAGE CONTAINER === */
 .container {
   padding: 60px;
+  padding-top: 40px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* === Headings === */
+/* === HEADINGS & TEXT === */
 h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+ul {
+  font-size: 20px;
+  list-style-type: square;
+  padding-left: 40px;
+}
+
+/* === INTRO BLOCK (Homepage) === */
+.intro h1 {
   font-size: 48px;
   margin-bottom: 10px;
 }
 
-/* === Filters === */
+.intro p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.image-side img {
+  width: 300px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+/* === GALLERY SECTION === */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.gallery img {
+  width: 250px;
+  height: 170px;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  cursor: zoom-in;
+}
+
+/* === FILTER BUTTONS === */
 .filters {
   text-align: center;
   margin-bottom: 20px;
@@ -60,29 +133,7 @@ h1 {
   color: black;
 }
 
-/* === Gallery === */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.gallery img {
-  width: 250px;
-  height: 170px;
-  object-fit: cover;
-  border: 2px solid white;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  cursor: zoom-in;
-}
-
-/* === Popup === */
+/* === IMAGE PREVIEW POPUP === */
 .popup {
   position: fixed;
   top: 0; left: 0;
@@ -101,7 +152,7 @@ h1 {
   border-radius: 10px;
 }
 
-/* === Contact Icons === */
+/* === CONTACT PAGE ICONS === */
 .icon {
   width: 20px;
   height: 20px;
@@ -109,9 +160,13 @@ h1 {
   margin-right: 8px;
 }
 
-/* === Responsive === */
+/* === RESPONSIVE DESIGN === */
 @media screen and (max-width: 768px) {
-  h1 {
+  body {
+    font-size: 18px;
+  }
+
+  h1, .intro h1 {
     font-size: 36px;
   }
 
@@ -124,6 +179,14 @@ h1 {
   .gallery img {
     width: 180px;
     height: 120px;
+  }
+
+  .image-side img {
+    width: 200px;
+  }
+
+  ul {
+    font-size: 18px;
   }
 
   .filters button {
