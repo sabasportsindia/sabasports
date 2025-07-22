@@ -1,3 +1,4 @@
+/* BODY & BASIC STYLING */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -6,21 +7,25 @@ body {
   background-position: center;
 }
 
+/* CONTAINER FOR MAIN SECTIONS */
 .container {
   padding: 60px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* HEADINGS */
 h1 {
   font-size: 48px;
   margin-bottom: 20px;
 }
 
+/* PARAGRAPHS */
 p {
   font-size: 20px;
   line-height: 1.6;
 }
 
+/* INTRO TEXT IN INDEX PAGE */
 .intro h1 {
   font-size: 48px;
   margin-bottom: 10px;
@@ -31,12 +36,14 @@ p {
   line-height: 1.5;
 }
 
+/* IMAGE ON RIGHT SIDE IN INDEX */
 .image-side img {
   width: 300px;
   border: 3px solid white;
   border-radius: 10px;
 }
 
+/* INFO BOX IN INDEX */
 .info {
   margin-top: 30px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -51,15 +58,36 @@ p {
 
 .info i {
   margin-right: 10px;
+  color: #0f0;
 }
 
+/* NAVIGATION BAR */
+.navbar {
+  background-color: #000;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar a {
+  color: white;
+  margin: 15px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #0f0;
+  text-decoration: underline;
+}
+
+/* GALLERY PAGE IMAGE STYLING */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 60px;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: transparent;
 }
 
 .gallery img {
@@ -75,13 +103,9 @@ p {
   transform: scale(1.05);
 }
 
+/* PRODUCT PAGE LIST STYLING */
 ul {
   font-size: 20px;
   list-style-type: square;
   padding-left: 40px;
-}
-
-i {
-  margin-right: 10px;
-  color: #0f0;
 }
