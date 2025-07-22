@@ -1,4 +1,4 @@
-/* BODY & BASIC STYLING */
+/* === Global Body Styling === */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -7,61 +7,7 @@ body {
   background-position: center;
 }
 
-/* CONTAINER FOR MAIN SECTIONS */
-.container {
-  padding: 60px;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-/* HEADINGS */
-h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-/* PARAGRAPHS */
-p {
-  font-size: 20px;
-  line-height: 1.6;
-}
-
-/* INTRO TEXT IN INDEX PAGE */
-.intro h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.intro p {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-/* IMAGE ON RIGHT SIDE IN INDEX */
-.image-side img {
-  width: 300px;
-  border: 3px solid white;
-  border-radius: 10px;
-}
-
-/* INFO BOX IN INDEX */
-.info {
-  margin-top: 30px;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.info p {
-  font-size: 18px;
-  margin: 8px 0;
-}
-
-.info i {
-  margin-right: 10px;
-  color: #0f0;
-}
-
-/* NAVIGATION BAR */
+/* === Navigation Bar === */
 .navbar {
   background-color: #000;
   text-align: center;
@@ -80,7 +26,67 @@ p {
   text-decoration: underline;
 }
 
-/* GALLERY PAGE IMAGE STYLING */
+/* === Main Section Container === */
+.container {
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* === Headings & Text === */
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* === Homepage Intro Section === */
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* === Image Side on Homepage === */
+.image-side img {
+  width: 300px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+/* === Optional Info Box === */
+.info {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.info i {
+  margin-right: 10px;
+  color: #0f0;
+}
+
+/* === Product List === */
+ul {
+  font-size: 20px;
+  list-style-type: square;
+  padding-left: 40px;
+}
+
+/* === Gallery Section === */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -103,9 +109,26 @@ p {
   transform: scale(1.05);
 }
 
-/* PRODUCT PAGE LIST STYLING */
-ul {
-  font-size: 20px;
-  list-style-type: square;
-  padding-left: 40px;
+/* === Responsive Layout (Optional — can extend further) === */
+@media screen and (max-width: 768px) {
+  .image-side img {
+    width: 200px;
+  }
+
+  .gallery img {
+    width: 180px;
+    height: 120px;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
 }
